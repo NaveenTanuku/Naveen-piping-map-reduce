@@ -8,8 +8,8 @@ import re
 for line in sys.stdin:
   wordList = line.strip().lower().split(" ")
   for word in wordList:
-    #word.replace(',','')
-    #word.replace('.','')
+    #word.replace(     ','     ,      ''    )
+    #word.replace(     '.'     ,      ''    )
     #word.replace("\'",'')
-    cleanWord = re.sub('[^a-zA-Z]+', '', word)
+    cleanWord = re.sub('[^a-z]+', '', word)
     print(cleanWord,',',1)
