@@ -25,4 +25,3 @@ for line in sys.stdin:
 
 # output the final key-summaryvalue result outside the loop
 print(thisKey,'\t',thisValue)
-
