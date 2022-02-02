@@ -32,6 +32,8 @@ OR be able to cd (change directory) to get to folder.
 
 See: [Basic Setup for Big Data](https://github.com/denisecase/basic-setup-for-bigdata)
 
+-----
+
 ## Case 1:  Local file-based
 
 ```PowerShell
@@ -74,6 +76,8 @@ type purchases.txt | python 21mapper.py | sort  | python 22reducer.py > out.txt
 
 How many times was each paymentType used?
 
+-----
+
 ## Interesting Custom Big Data Story
 
 I found the Kaggle Tweets dataset regarding disasters interesting. 
@@ -99,6 +103,8 @@ Future work: Combine similar words using [stemming](https://machinelearningknowl
 - wrecked  26.0
 
 ![Initial Disaster Tweets Chart](DisasterTypesWithGreatestCountOfTweets.PNG)
+
+-----
 
 ## References
 
