@@ -78,14 +78,27 @@ How many times was each paymentType used?
 
 I found the Kaggle Tweets dataset regarding disasters interesting. 
 I wondered "which kinds of disasters had the most tweets?"
+
 From the initial dataset, I'll map to key-value pairs: disasterType, count. 
 Then, I'll use the terminal "sort" to get them sorted in case they aren't. 
 Then, I'll reduce all the key-value pairs for one disasterType to a single value: disasterType, countOfTweets. 
-That's only 220 records, so I'll use Excel to chart it. 
+
+```PowerShell
+cat tweets.csv | python 81mapper.py | sort  | python 82reducer.py > case-out.txt
+
+```
+
+The result is only 220 records, so I'll use Excel to chart it. 
 Excel Data / Filter.  Then, sort by count reversed - or better yet, just take the "Top 10". 
 Excel Insert / Recommended Chart - seems to look nice. Found out the top 10 disaster types had nearly the same count of tweets in this dataset. 
 
+Future work: Combine similar words using [stemming](https://machinelearningknowledge.ai/beginners-guide-to-stemming-in-python-nltk/) so that the following are combined to yeild wreck=73. 
 
+- wreck  	 35.0
+- wreckage 12.0
+- wrecked  26.0
+
+![Initial Disaster Tweets Chart](DisasterTypesWithGreatestCountOfTweets.PNG)
 
 ## References
 
