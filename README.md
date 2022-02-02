@@ -74,6 +74,19 @@ type purchases.txt | python 21mapper.py | sort  | python 22reducer.py > out.txt
 
 How many times was each paymentType used?
 
+## Interesting Custom Big Data Story
+
+I found the Kaggle Tweets dataset regarding disasters interesting. 
+I wondered "which kinds of disasters had the most tweets?"
+From the initial dataset, I'll map to key-value pairs: disasterType, count. 
+Then, I'll use the terminal "sort" to get them sorted in case they aren't. 
+Then, I'll reduce all the key-value pairs for one disasterType to a single value: disasterType, countOfTweets. 
+That's only 220 records, so I'll use Excel to chart it. 
+Excel Data / Filter.  Then, sort by count reversed - or better yet, just take the "Top 10". 
+Excel Insert / Recommended Chart - seems to look nice. Found out the top 10 disaster types had nearly the same count of tweets in this dataset. 
+
+
+
 ## References
 
 - [Udacity "Introduction to Hadoop and MapReduce"](https://classroom.udacity.com/courses/ud617/)
