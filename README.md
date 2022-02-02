@@ -92,7 +92,7 @@ The result is only 220 records, so I'll use Excel to chart it.
 Excel Data / Filter.  Then, sort by count reversed - or better yet, just take the "Top 10". 
 Excel Insert / Recommended Chart - seems to look nice. Found out the top 10 disaster types had nearly the same count of tweets in this dataset. 
 
-Future work: Combine similar words using [stemming](https://machinelearningknowledge.ai/beginners-guide-to-stemming-in-python-nltk/) so that the following are combined to yeild wreck=73. 
+Future work: Combine similar words using [stemming](https://machinelearningknowledge.ai/beginners-guide-to-stemming-in-python-nltk/) so that the following are combined to yield wreck=73. 
 
 - wreck  	 35.0
 - wreckage 12.0
