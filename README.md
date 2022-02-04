@@ -9,5 +9,5 @@ The data contains movie name, genre, groosers collections, tickets sold in the h
 By using the mapper and reducer scripts I have processed the data of 27 records to 3 records by grouping the genres which collected in the hollywood from last years. Among all the genres the Adventure sold more number of tickets as shown in the below charts.
 
 ## Chart: 
-## Top 10 platform releases: 
+## Top 3 Genere releases: 
 ![image](Capture.PNG)
