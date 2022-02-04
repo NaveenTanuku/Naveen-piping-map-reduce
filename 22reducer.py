@@ -9,19 +9,19 @@ thisValue = 0.0
 for line in sys.stdin:
   datalist = line.strip().split('\t')
   if (len(datalist) == 2) : 
-    store, amount = datalist
+    GENRE, TICKETS_SOLD = datalist
 
-    if store != thisKey:   # we've moved to another key
+    if GENRE != thisKey:   # we've moved to another key
       if thisKey:
         # output the previous key-summaryvalue result
         print(thisKey,'\t',thisValue)
 
       # start over for each new key
-      thisKey = store 
+      thisKey = GENRE 
       thisValue = 0.0
   
     # apply the aggregation function
-    thisValue += float(amount)
+    thisValue += float(TICKETS_SOLD)
 
 # output the final key-summaryvalue result outside the loop
 print(thisKey,'\t',thisValue)

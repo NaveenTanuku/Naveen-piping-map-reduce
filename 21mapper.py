@@ -6,9 +6,11 @@ import sys
 # iterate through each line provided via standard input
 for line in sys.stdin:
   datalist = line.strip().split("    ")
-  if (len(datalist) == 6) : 
-    date, time,store, department, cost, paymentType = datalist
+  datalist=datalist[0].split(",")
+  print(datalist)
+  if (len(datalist) == 8) : 
+    YEAR, MOVIE, GENRE, RATING,	DISTRIBUTOR,	TOTAL_YEAR,	TOTAL_IN_DOLLARS,TICKETS_SOLD = datalist
 
     # print intermediate key-value pairs to standard output
-    print(store,"\t",cost)
+    print(GENRE,"\t",TICKETS_SOLD)
 
