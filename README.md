@@ -10,4 +10,4 @@ By using the mapper and reducer scripts I have processed the data of 27 records 
 
 ## Chart: 
 ## Top 10 platform releases: 
-[image](https://github.com/NaveenTanuku/Naveen-piping-map-reduce/blob/master/Capture.PNG)
+![image](Capture.PNG)
